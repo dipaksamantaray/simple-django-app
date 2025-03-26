@@ -1,0 +1,5 @@
+.custom-img {
+    width: 1900px;
+    height: 700px;
+    object-fit: cover;  /* Ensures image fills the area without distortion */
+}

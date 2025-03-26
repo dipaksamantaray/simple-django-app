@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Contacts{% endblock title %}
+{% block body %}
+<div class='container'>
+<form method='post' action="/contact">
+    {% csrf_token %}
+    <div class="mt-3">
+      <label for="examplename" class="form-label">Name</label>
+      <input type="text" class="form-control" id="text" aria-describedby="text" name="name">
+    </div>
+    <div class="mt-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
+      </div>
+      <div class="mt-3">
+        <label for="examplephonenumber" class="form-label">Phone Number</label>
+        <input type="text" class="form-control" id="mob" aria-describedby="text" name="mob">
+      </div>
+      <div class="mt-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" aria-describedby="password" name="password">
+      </div>
+
+    <button type="submit" class="btn btn-primary mt-3 ">Submit</button>
+  </form>
+</div>
+  {% endblock body %}
